@@ -166,9 +166,12 @@
     <Content Include="assets\js\components\hs.modal-window.js" />
     <Content Include="assets\js\components\hs.scrollbar.js" />
     <Content Include="assets\js\components\hs.tabs.js" />
+    <Content Include="assets\js\helpers\hs.hamburgers.js" />
+    <Content Include="assets\js\helpers\hs.modal-markup.js" />
     <Content Include="assets\js\hs.core.js" />
     <Content Include="assets\tether.min.js" />
     <Content Include="assets\vendor\animate.css" />
+    <Content Include="assets\vendor\appear.js" />
     <Content Include="assets\vendor\bootstrap\bootstrap-4-alpha-5\bootstrap.css" />
     <Content Include="assets\vendor\bootstrap\bootstrap-4-alpha-5\bootstrap.js" />
     <Content Include="assets\vendor\bootstrap\bootstrap-4-alpha-5\bootstrap.min.css" />
@@ -177,6 +180,9 @@
     <Content Include="assets\vendor\bootstrap\bootstrap.js" />
     <Content Include="assets\vendor\bootstrap\bootstrap.min.css" />
     <Content Include="assets\vendor\bootstrap\bootstrap.min.js" />
+    <Content Include="assets\vendor\custombox\custombox.legacy.min.js" />
+    <Content Include="assets\vendor\custombox\custombox.min.css" />
+    <Content Include="assets\vendor\custombox\custombox.min.js" />
     <Content Include="assets\vendor\dzsparallaxer\advancedscroller\bokeh\b1.png" />
     <Content Include="assets\vendor\dzsparallaxer\advancedscroller\bokeh\b2.png" />
     <Content Include="assets\vendor\dzsparallaxer\advancedscroller\bokeh\b3.png" />
@@ -3316,6 +3322,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Landing_Modal.cshtml" />
     <Content Include="Views\Home\SAResources.cshtml" />
+    <Content Include="Views\Home\Landing_Modal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -3350,7 +3357,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51075</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
