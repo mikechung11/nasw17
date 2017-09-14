@@ -26,6 +26,12 @@
     <link rel="stylesheet" href="../../assets/vendor/hamburgers/hamburgers.min.css">
     <!-- CSS Unify -->
     <link rel="stylesheet" href="../../assets/css/unify.css">
+    <style>
+        .help_btn {
+            height: 50px;
+            width: 320px;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -33,22 +39,31 @@
         <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-min-height-100vh g-flex-middle g-bg-cover g-bg-pos-center g-bg-img-hero g-bg-white-opacity-0_3--after " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
             <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url();"></div>
             <div class="container text-center g-bg-transparent g-z-index-1 g-py-100" ng-cloak>
+                    <div class="row">
+                        <a href="tel:+411">
+                            <input type="image" src="~/images/911.png" />
+                        </a>
+                        @*<button style="background: url('../../images/911.png')" ... />*@
+                        @*<span class="d-inline-block" style="background-image: url('../../images/911.png');">
+                            <i class="icon-finance-147 u-line-icon-pro"></i>
+                        </span>*@
+                    </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-sm-8">
                         <div class="mb-5">
                             <h1 class="g-color-white g-font-size-60 mb-4">NEED HELP?</h1>
                             @*<h2 class="g-color-white g-font-weight-300 g-font-size-20 mb-0">Finding your questions is easy now.</h2>*@
                         </div>
                         <!-- Promo Blocks - Input -->
                         <div class="form-group mb-0">
-                            <div class="input-group justify-content-center">
-                                <div class="col-sm-5">
-                                    <a class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25" href="#">I NEED HELP</a>
+                            <div class="input-group">
+                                <div class="col-sm-4">
+                                    <a class="btn btn-xl u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25 help_btn" href="#">I NEED HELP</a>
                                 </div>
-                                <div class="col-sm-1">
+                                <div class="col-sm-2">
                                 </div>
-                                <div class="col-sm-6">
-                                    <a class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25" href="#">SOMEONE I KNOW NEEDS HELP</a>
+                                <div class="col-sm-4">
+                                    <a class="btn btn-xl u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25 help_btn" href="#">SOMEONE I KNOW NEEDS HELP</a>
                                 </div>
 
                                 @*<input id="inputGroup1_1" class="form-control u-form-control g-brd-white g-font-size-default g-placeholder-gray g-rounded-left-30 g-px-25 g-py-15" type="text" placeholder="Ask a question">
