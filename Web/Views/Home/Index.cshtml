@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" class="font-primary">
+<html lang="en" class="font-primary" ng-app="mainApp">
 <head>
     <!-- Title -->
     <title>Need Help?</title>
@@ -27,28 +27,28 @@
     <!-- CSS Unify -->
     <link rel="stylesheet" href="../../assets/css/unify.css">
 </head>
-<body>
+<body ng-controller="IndexController as IxCtrl">
     <main>
         <!-- Promo Block -->
-        <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-min-height-100vh g-flex-middle g-bg-cover g-bg-pos-center g-bg-img-hero g-bg-white-opacity-0_3--after " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-            <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url();"></div>
+        <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-min-height-100vh g-flex-middle g-bg-cover g-bg-pos-center g-bg-img-hero g-bg-black-opacity-0_5--after " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+            <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url(../../images/trees.png);"></div>
             <div class="container text-center g-bg-transparent g-z-index-1 g-py-100" ng-cloak>
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 g-py-100">
                         <div class="mb-5">
-                            <h1 class="g-color-white g-font-size-60 mb-4">NEED HELP?</h1>
+                            <h1 class="g-color-white g-font-size-60 mb-4 g-py-30">NEED HELP?</h1>
                             @*<h2 class="g-color-white g-font-weight-300 g-font-size-20 mb-0">Finding your questions is easy now.</h2>*@
                         </div>
-                        <!-- Promo Blocks - Input -->
-                        <div class="form-group mb-0">
+                        <!-- First Buttons - Input -->
+                        <div class="form-group mb-0" ng-hide="IxCtrl.showBtn">
                             <div class="input-group justify-content-center">
                                 <div class="col-sm-5">
-                                    <a class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25" href="#">I NEED HELP</a>
+                                    <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25" ng-click="IxCtrl.helpBtn('me')">I NEED HELP</button>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-6">
-                                    <a class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25" href="#">SOMEONE I KNOW NEEDS HELP</a>
+                                    <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25" ng-click="IxCtrl.helpBtn()">SOMEONE I KNOW NEEDS HELP</button>
                                 </div>
 
                                 @*<input id="inputGroup1_1" class="form-control u-form-control g-brd-white g-font-size-default g-placeholder-gray g-rounded-left-30 g-px-25 g-py-15" type="text" placeholder="Ask a question">
@@ -59,7 +59,11 @@
                         </div>*@
                             </div>
                         </div>
-                        <!-- End Promo Blocks - Input -->
+                        <!-- End First Buttons - Input -->
+
+                    </div>
+                    <div class="col-sm-12 g-py-30" text-align="center">
+                        <img style="border-radius: 8px; height: 80%" src="~/images/logo-nasw(sm).gif" />
                     </div>
                 </div>
             </div>
@@ -108,5 +112,8 @@
             });
         })(jQuery);
     </script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/mainApp.js"></script>
+    <script src="~/Scripts/indexCtrl.js"></script>
 </body>
 </html>
