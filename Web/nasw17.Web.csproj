@@ -240,6 +240,9 @@
     <Content Include="assets\vendor\hamburgers\hamburgers.min.css" />
     <Content Include="assets\vendor\hs-megamenu\src\hs.megamenu.css" />
     <Content Include="assets\vendor\hs-megamenu\src\hs.megamenu.js" />
+    <Content Include="assets\vendor\icon-awesome\css\font-awsome.min.css" />
+    <Content Include="assets\vendor\icon-hs\style.css" />
+    <Content Include="assets\vendor\icon-line-pro\style.css" />
     <Content Include="assets\vendor\tether.min.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -356,6 +359,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Views\Home\HtmlPage1.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -370,6 +374,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\SAResources.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -26,5 +26,14 @@ namespace nasw17.Web.Controllers
 
             return View();
         }
+
+        public ActionResult SAResources()
+        {
+            ViewBag.Message = "Sexual Assault Resources.";
+
+            return View();
+        }
+
+
     }
 }
