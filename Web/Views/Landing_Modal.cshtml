@@ -1,0 +1,65 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Modals | Unify - Responsive Website Template</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../../assets/vendor/icon-hs/style.css">
+
+    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../../assets/vendor/hamburgers/hamburgers.min.css">
+
+    <link rel="stylesheet" href="../../assets/vendor/custombox/custombox.min.css">
+
+    <link rel="stylesheet" href="../../assets/vendor/animate.css">
+
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="../../assets/css/unify.css">
+</head>
+<body>
+    <!-- FadeIn -->
+    <div class="col-md-3 g-mb-30">
+        <h3 class="h4 g-font-weight-300 g-mb-20">FadeIn</h3>
+        <div id="shortcode1">
+            <a class="btn u-btn-primary" href="#modal" data-modal-target="#modal" data-modal-effect="fadein">I Need Help</a>
+        </div>
+    </div>
+    <!-- End FadeIn -->
+
+    <!-- JS Implementing Plugins -->
+    <script src="~/assets/vendor/appear.js">
+    </script>
+    <script src="~/assets/vendor/custombox/custombox.min.js">
+    </script>
+    <!-- JS Unify -->
+    <script src="~/assets/js/components/hs.modal-window.js">
+    </script>
+    <!-- JS Plugins Init. -->
+    <script type="text/javascript">
+        (function ($) {
+        'use strict';
+        $(document).on('ready', function () {
+        // Initialization of autonomous popups
+        $.HSCore.components.HSModalWindow.init('[data-modal-target])');
+        });
+        })(jQuery);
+    </script>
+</body>
+</html>
