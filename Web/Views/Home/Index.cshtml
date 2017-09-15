@@ -30,10 +30,12 @@
         [ng\:cloak], [ng-cloak], .ng-cloak {
             display: none !important;
         }
+
         .help_btn {
             height: 50px;
             width: 320px;
         }
+
         .help_btn2 {
             height: 50px;
             width: 200px;
@@ -45,51 +47,45 @@
         <!-- Promo Block -->
         <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-min-height-100vh g-flex-middle g-bg-cover g-bg-pos-center g-bg-img-hero g-bg-black-opacity-0_6--after " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
             <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url(../../images/trees.png);"></div>
-            <div class="container text-center g-bg-transparent g-z-index-1 g-py-25" ng-cloak>
-                    <div class="row">
+            <div class="container text-center g-bg-transparent g-z-index-1 g-py-150" ng-cloak>
+                @*<div class="row">
                         <a href="tel:+411">
                             <input type="image" src="~/images/911.png" />
                         </a>
-                        @*<button class="btn btn-md u-btn-white g-color-white g-bg-red g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25 help_btn g-py-20">Escape</button>*@
-
-                    </div>
+                    </div>*@
                 <div class="row justify-content-center">
                     <div class="col-lg-12 g-py-20">
-                        <div class="mb-5"  ng-hide="IxCtrl.showBtn">
+                        <div class="mb-5" ng-hide="IxCtrl.showBtn">
                             <h1 class="g-color-white g-font-size-60 mb-4 g-py-30">Need Help?</h1>
                         </div>
                         <div class="mb-5" ng-show="IxCtrl.showBtn" ng-cloak>
                             <h1 class="g-color-white g-font-size-60 mb-4 g-py-10">Concerning?</h1>
                         </div>
                         <!-- First Buttons - Input -->
-                        <div class="form-group mb-0" ng-hide="IxCtrl.showBtn">
-                            <div class="input-group justify-content-center">
-                                <div class="col-sm-4">
-                                    <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25 help_btn" ng-click="IxCtrl.helpBtn('me')">I Need Help</button>
-                                </div>
-                                <div class="col-sm-2">
-                                </div>
-                                <div class="col-sm-4">
-                                    <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25 help_btn" ng-click="IxCtrl.helpBtn()">Someone I Know Needs Help</button>
-                                </div>
+                        <div class="mb-0" ng-hide="IxCtrl.showBtn">
+                            <div class="col-sm-12 g-py-10">
+                                <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-primary--hover g-bg-white--hover g-rounded-25 help_btn" ng-click="IxCtrl.helpBtn('me')">I Need Help</button>
+                            </div>
+                            <div class="col-sm-12 g-py-10">
+                                <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-primary--hover g-bg-white--hover g-rounded-25 help_btn" ng-click="IxCtrl.helpBtn()">Someone I Know Needs Help</button>
                             </div>
                         </div>
                         <!-- End First Buttons - Input -->
                         <!-- Second Buttons - Input -->
                         <div class="mb-0" ng-show="IxCtrl.showBtn" ng-cloak>
-                                <div class="col-sm-12 g-py-10">
-                                    <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-primary--hover g-bg-white--hover g-rounded-25 help_btn2" ng-click="IxCtrl.categBtn('suicide')">Suicide</button>
-                                </div>
-                                <div class="col-sm-12 g-py-10">
-                                    <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-primary--hover g-bg-white--hover g-rounded-25 help_btn2" ng-click="IxCtrl.categBtn('sexual_assault')">Sexual Assault</button>
-                                </div>
-                                <div class="col-sm-12 g-py-10">
-                                    <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-primary--hover g-bg-white--hover g-rounded-25 help_btn2" ng-click="IxCtrl.categBtn('domestic_violence')">Domestic Violence</button>
-                                </div>
-                                <div class="col-sm-12 g-py-50">
-                                    <button class="btn btn-md u-btn-white g-color-white g-bg-blue g-brd-white--hover g-color-blue--hover g-bg-white--hover g-rounded-25" ng-click="IxCtrl.showBtn = !IxCtrl.showBtn"><i class="fa fa-arrow-left g-mr-3" aria-hidden="true"></i> Back</button>
-                                </div>
+                            <div class="col-sm-12 g-py-10">
+                                <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-primary--hover g-bg-white--hover g-rounded-25 help_btn2" ng-click="IxCtrl.categBtn('suicide')">Suicide</button>
                             </div>
+                            <div class="col-sm-12 g-py-10">
+                                <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-primary--hover g-bg-white--hover g-rounded-25 help_btn2" ng-click="IxCtrl.categBtn('sexual_assault')">Sexual Assault</button>
+                            </div>
+                            <div class="col-sm-12 g-py-10">
+                                <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-primary--hover g-bg-white--hover g-rounded-25 help_btn2" ng-click="IxCtrl.categBtn('domestic_violence')">Domestic Violence</button>
+                            </div>
+                            <div class="col-sm-12 g-py-50">
+                                <button class="btn btn-md u-btn-white g-color-white g-bg-blue g-brd-white--hover g-color-blue--hover g-bg-white--hover g-rounded-25" ng-click="IxCtrl.showBtn = !IxCtrl.showBtn"><i class="fa fa-arrow-left g-mr-3" aria-hidden="true"></i> Back</button>
+                            </div>
+                        </div>
                         <!-- End Second Buttons - Input -->
                     </div>
                 </div>
