@@ -27,7 +27,7 @@ namespace nasw17.Web.Controllers
             return View();
         }
 
-        public ActionResult SAResource()
+        public ActionResult SAResources()
         {
             ViewBag.Message = "Sexual Assault Resources.";
 
@@ -57,6 +57,18 @@ namespace nasw17.Web.Controllers
         public ActionResult Report()
         {
             ViewBag.Message = "Report";
+
+            return View();
+        }
+        public ActionResult Completion()
+        {
+            ViewBag.Message = "Completion";
+
+            return View();
+        }
+        public ActionResult Complete()
+        {
+            ViewBag.Message = "Complete";
 
             return View();
         }
