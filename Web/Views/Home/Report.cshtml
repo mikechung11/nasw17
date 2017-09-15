@@ -18,10 +18,14 @@
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="../../assets/vendor/icon-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="../../assets/vendor/animate.css">
-    <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
     <link rel="stylesheet" href="../../assets/vendor/hamburgers/hamburgers.min.css">
+
+    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../../../assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
     <link rel="stylesheet" href="../../assets/vendor/jquery.filer/css/jquery.filer.css">
+    <link rel="stylesheet" href="../../assets/vendor/animate.css">
     <!-- CSS Unify -->
     <link rel="stylesheet" href="../../assets/css/unify.css">
     <style>
@@ -37,10 +41,67 @@
     </style>
 </head>
 <body>
+    <!-- Header -->
+    <header id="js-header" class="u-header u-header--static--lg u-header--show-hide--lg u-header--change-appearance--lg"
+            data-header-fix-moment="500"
+            data-header-fix-effect="slide">
+        <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10"
+             data-header-fix-moment-exclude="g-bg-white g-py-10"
+             data-header-fix-moment-classes="g-bg-white-opacity-0_7 u-shadow-v18 g-py-0">
+            <nav class="js-mega-menu navbar navbar-toggleable-md">
+                <div class="container">
+                    <!-- Responsive Toggle Button -->
+                    <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-right-0" type="button"
+                            aria-label="Toggle navigation"
+                            aria-expanded="false"
+                            aria-controls="navBar"
+                            data-toggle="collapse"
+                            data-target="#navBar">
+                        <span class="hamburger hamburger--slider">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <!-- End Responsive Toggle Button -->
+                    <!-- Logo -->
+                    <a href="/Home/Index" class="navbar-brand">
+                        <img src="~/images/logo-nasw-sm-.gif" alt="nasw logo">
+                    </a>
+                    <!-- End Logo -->
+                    <!-- Navigation -->
+                    <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+                        <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
+                            <li class="nav-item g-mx-20--lg ">
+                                <a href="/Home/Index" class="nav-link g-px-0 g-color-primary--hover"><i class="fa fa-home g-color-primary"></i>Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/SAPage" class="nav-link g-px-0 g-color-primary--hover">Self-Report</a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/SuiResource" class="nav-link g-px-0 g-color-primary--hover">Suicide Prevention</a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/SAResources" class="nav-link g-px-0 g-color-primary--hover">Sexual Abuse</a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/DVResource" class="nav-link g-px-0 g-color-primary--hover">Domestic Violence</a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/Report" class="nav-link g-px-0 g-color-primary--hover">Report for Another</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Navigation -->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
     <div>
-        <a class="goToHome" href="/Home/Index">
+        @*<a class="goToHome" href="/Home/Index">
             <i class="fa fa-home fa-3x g-color-primary"></i>
-        </a>
+        </a>*@
     </div>
     <main>
         <!-- Signup -->
@@ -50,7 +111,7 @@
                     <div class="col-sm-12 col-md-10">
                         <div class="u-shadow-v21 g-bg-white rounded g-py-30 g-px-30">
                             <header class="text-center mb-4">
-                                <h2 class="h2 g-color-primary g-font-weight-600">Report</h2>
+                                <h2 class="h2 g-color-black g-font-weight-600">Report</h2>
                             </header>
                             <!-- Form -->
                             <form class="g-py-10">
@@ -115,7 +176,7 @@
                                 </div>*@
                                 </div>
                                 <div class="row">
-                                    <button class="btn btn-md btn-block u-btn-primary rounded-0 g-py-15" type="button">Submit</button>
+                                    <a class="btn btn-md btn-block u-btn-primary rounded-0 g-py-15" href="/Home/Completion">Submit</a>
                                 </div>
                             </form>
                         </div>
@@ -130,18 +191,37 @@
     <script src="../../assets/vendor/tether.min.js"></script>
     <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
     <!-- JS Implementing Plugins -->
+    <script src="../../assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+    <script src="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+
     <!-- JS Unify -->
     <script src="../../assets/vendor/jquery.filer/js/jquery.filer.min.js"></script>
     <script src="../../assets/js/hs.core.js"></script>
     <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
     <script src="../../assets/js/helpers/hs.hamburgers.js"></script>
     <script src="../../assets/js/helpers/hs.file-attachments.js"></script>
+    <script src="../../assets/js/components/hs.popup.js"></script>
+
     <script>
         $(document).on('ready', function () {
             $.HSCore.helpers.HSFileAttachments.init();
             $.HSCore.components.HSFileAttachment.init('.js-file-attachment');
         });
     </script>
+    <!-- JS Plugins Init. -->
+    <script>
+        // Header
+        $(document).on('ready', function () {
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
 
+            // Initialization of HSMegaMenu plugin
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+        });
+    </script>
 </body>
 </html>

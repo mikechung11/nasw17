@@ -164,6 +164,7 @@
     <Content Include="assets\js\components\hs.header.js" />
     <Content Include="assets\js\components\hs.modal-event.js" />
     <Content Include="assets\js\components\hs.modal-window.js" />
+    <Content Include="assets\js\components\hs.popup.js" />
     <Content Include="assets\js\components\hs.scrollbar.js" />
     <Content Include="assets\js\components\hs.tabs.js" />
     <Content Include="assets\js\helpers\hs.file-attachments.js" />
@@ -3129,6 +3130,7 @@
     <Content Include="images\logo-nasw%28sm%29.gif" />
     <Content Include="images\logo-nasw-sm-.gif" />
     <Content Include="images\logo-nasw.gif" />
+    <Content Include="images\map1.png" />
     <Content Include="images\trees.png" />
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular.js" />
@@ -3361,6 +3363,7 @@
     <Content Include="Views\Home\Report.cshtml" />
     <Content Include="Views\Home\DVResource.cshtml" />
     <Content Include="Views\Home\SAPage.cshtml" />
+    <Content Include="Views\Home\Completion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
