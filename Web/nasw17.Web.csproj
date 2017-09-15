@@ -3333,6 +3333,8 @@
     <Content Include="Views\Home\SAResources.cshtml" />
     <Content Include="Views\Home\Landing_Modal.cshtml" />
     <Content Include="Views\Home\SuiResource.cshtml" />
+    <Content Include="Views\Home\DVResource.cshtml" />
+    <Content Include="Views\Home\SAPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
