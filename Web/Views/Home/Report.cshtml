@@ -41,17 +41,26 @@
 </head>
 <body>
     <main>
-
         <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-min-height-100vh g-flex-middle g-bg-cover g-bg-pos-center g-bg-img-hero g-bg-black-opacity-0_6--after " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-
             <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url(../../images/trees.png);"></div>
             <div class="container text-center g-bg-transparent g-z-index-1 g-py-30" ng-cloak>
-
+                <!-- Home Button -->
                 <div>
                     <a class="goToHome" href="/Home/Index">
                         <i class="fa fa-home fa-3x g-color-primary"></i>
                     </a>
                 </div>
+                <!-- Home Button End -->
+                <!-- Escape Button -->
+                <div style=" position: fixed; right: 10px; top: 10px; z-index: 10">
+                    <a href="https://www.google.com/" class="btn btn-md u-btn-white g-color-white g-bg-darkred g-brd-white--hover g-color-darkred--hover g-bg-white--hover g-rounded-25 escape_btn">
+                        <span class="pull-left text-left" style="padding-top:10px">
+                            <strong>ESCAPE</strong>
+                        </span>
+                        <i class="fa fa-ban float-right g-font-size-42 g-ml-15"></i>
+                    </a>
+                </div>
+                <!-- Escape Button End-->
                 <!-- Signup -->
                 <section class="g-bg-gray-light-v5 g-bg-transparent ">
                     <div class="container g-bg-transparent g-py-20">
@@ -116,12 +125,6 @@
                                         <div class="form-group mb-0 g-py-20">
                                             <label class="g-color-gray-dark-v2 g-font-weight-600 g-font-size-13">Attachments:</label>
                                             <input class="js-file-attachment" type="file" name="fileAttachment2[]">
-                                            @*<div class="jFiler jFiler-theme-default">
-                                                    <input class="js-file-attachment" type="file" name="fileAttachment2[]" multiple="multiple" style="position: absolute; left: -9999px; top: -9999px; z-index: -9999;"><div class="u-file-attach-v3 g-mb-15">
-                                                        <h3 class="g-font-size-16 g-color-gray-dark-v2 mb-0">Drop files here or <span class="g-color-primary">Browse your device</span></h3>
-                                                        <p class="g-font-size-14 g-color-gray-light-v2 mb-0">Maximum file size 10mb</p>
-                                                    </div>
-                                                </div>*@
                                         </div>
                                         <div class="row">
                                             <button class="btn btn-md btn-block u-btn-primary rounded-0 g-py-15" type="button">Submit</button>
