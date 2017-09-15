@@ -19,14 +19,15 @@
         vm.categBtn = _categBtn;
 
         function _init() {
-            
-           
+            console.log("Visits for Suicide: " + $cookies.get('suicide'));
+            console.log("Visits for Sexual Assault: " + $cookies.get('sexual_assault'));
+            console.log("Visits for Domestic Violence: " + $cookies.get('domestic_violence'));
         }
         function _helpBtn(type) {
             if (type == 'me') {
-               vm.showBtn = true;
+                vm.showBtn = true;
             } else {
-               $window.location.href = "/Home/Report";
+                $window.location.href = "/Home/Report";
             }
         }
         function _categBtn(value) {
@@ -39,9 +40,27 @@
             } else {
                 $cookies.put(value, 1, { 'expires': expireDate });
             }
-            if (value == "suicide") $window.location.href = "/Home/SuiResource";
-            if (value == "sexual_assault") $window.location.href = "/Home/SAResources";
-            if (value == "domestic_violence") $window.location.href = "/Home/";
+            if (value == "suicide") {
+                if ($cookies.get(value) > 1) {
+                    $window.location.href = "/Home/SAPage";
+                } else {
+                    $window.location.href = "/Home/SuiResource";
+                }
+            }
+            if (value == "sexual_assault") {
+                if ($cookies.get(value) > 1) {
+                    $window.location.href = "/Home/SAPage";
+                } else {
+                    $window.location.href = "/Home/SAResources";
+                }
+            }
+            if (value == "domestic_violence") {
+                if ($cookies.get(value) > 1) {
+                    $window.location.href = "/Home/SAPage";
+                } else {
+                    $window.location.href = "/Home/DVResource";
+                }
+            }
         }
     }
 })();
