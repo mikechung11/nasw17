@@ -1,4 +1,4 @@
-﻿//Facebook Controller
+﻿//Index Controller
 (function () {
     "use strict";
     angular
