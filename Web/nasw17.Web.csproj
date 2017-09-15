@@ -3109,6 +3109,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="images\logo-nasw%28sm%29.gif" />
+    <Content Include="images\logo-nasw-sm-.gif" />
     <Content Include="images\logo-nasw.gif" />
     <Content Include="images\trees.png" />
     <Content Include="Scripts\angular-cookies.js" />
