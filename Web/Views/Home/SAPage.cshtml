@@ -2,9 +2,28 @@
     Layout = "";
 }
 <head>
-
-    <!-- CSS Unify -->
+    <!-- Title -->
+    <title>Self Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin" rel="stylesheet" type="text/css">
+    <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="../../assets/vendor/bootstrap/bootstrap.min.css">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../../assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../../assets/vendor/animate.css">
+    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../../assets/vendor/hamburgers/hamburgers.min.css">
+    <!-- CSS Unify -->
     <link rel="stylesheet" href="../../assets/css/unify.css">
     <link rel="stylesheet" href="../../assets/vendor/icon-awesome/css/font-awesome.min.css">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin" rel="stylesheet" type="text/css">
@@ -28,7 +47,66 @@
         }
     </style>
 </head>
+
 <body>
+    <!-- Header -->
+    <header id="js-header" class="u-header u-header--static--lg u-header--show-hide--lg u-header--change-appearance--lg"
+            data-header-fix-moment="500"
+            data-header-fix-effect="slide">
+        <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10"
+             data-header-fix-moment-exclude="g-bg-white g-py-10"
+             data-header-fix-moment-classes="g-bg-white-opacity-0_7 u-shadow-v18 g-py-0">
+            <nav class="js-mega-menu navbar navbar-toggleable-md">
+                <div class="container">
+                    <!-- Responsive Toggle Button -->
+                    <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-right-0" type="button"
+                            aria-label="Toggle navigation"
+                            aria-expanded="false"
+                            aria-controls="navBar"
+                            data-toggle="collapse"
+                            data-target="#navBar">
+                        <span class="hamburger hamburger--slider">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <!-- End Responsive Toggle Button -->
+                    <!-- Logo -->
+                    <a href="/Home/Index" class="navbar-brand">
+                        <img src="~/images/logo-nasw-sm-.gif" alt="nasw logo">
+                    </a>
+                    <!-- End Logo -->
+                    <!-- Navigation -->
+                    <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+                        <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
+                            <li class="nav-item g-mx-20--lg ">
+                                <a href="/Home/Index" class="nav-link g-px-0 g-color-primary--hover"><i class="fa fa-home g-color-primary"></i>Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/SAPage" class="nav-link g-px-0 g-color-primary--hover">Self-Report</a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/SuiResource" class="nav-link g-px-0 g-color-primary--hover">Suicide Prevention</a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/SAResources" class="nav-link g-px-0 g-color-primary--hover">Sexual Abuse</a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/DVResource" class="nav-link g-px-0 g-color-primary--hover">Domestic Violence</a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/Report" class="nav-link g-px-0 g-color-primary--hover">Report for Another</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Navigation -->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
     <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-min-height-100vh g-flex-middle g-bg-cover g-bg-pos-center g-bg-img-hero g-bg-black-opacity-0_6--after " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 
         <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url(../../images/trees.png);"></div>
@@ -83,18 +161,18 @@
                                             </div>
                                         </div>
 
-                                        <!-- Textarea -->
-                                        <div class="form-group">
-                                            <label class="col-md-4 control-label" for=""><strong>Tell Us More About Your Situation</strong></label>
-                                            <div class="col-md-9">
-                                                <textarea rows="5" placeholder="Description" class="form-control" id="" name=""></textarea>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </form>
-                                <div>
-                                    <button class="btn btn-primary" style="margin-left:600px">Send</button>
+                            <!-- Textarea -->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for=""><strong>Tell Us More About Your Situation</strong></label>
+                                <div class="col-md-8">
+                                    <textarea rows="5" placeholder="Description" class="form-control" id="" name=""></textarea>
                                 </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div>
+                        <a class="btn btn-primary" style="margin-left:600px" href="/Home/Complete">Submit</a>
+                    </div>
 
 
                             </div>
@@ -107,16 +185,26 @@
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <!-- JS Global Compulsory -->
     <script src="../../assets/vendor/tether.min.js"></script>
     <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
     <!-- JS Implementing Plugins -->
-    <!-- JS Unify -->
-    <script src="../../assets/vendor/jquery.filer/js/jquery.filer.min.js"></script>
-    <script src="../../assets/js/hs.core.js"></script>
     <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="../../assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+    <script src="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+    <script src="../../assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+    <!-- JS Unify -->
+    <script src="../../assets/js/hs.core.js"></script>
+    <script src="../../assets/js/components/hs.header.js"></script>
     <script src="../../assets/js/helpers/hs.hamburgers.js"></script>
-    <script src="../../assets/js/helpers/hs.file-attachments.js"></script>
+
+    <script>
+        // Header
+        $(document).on('ready', function () {
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+        });
+    </script>
     <script>
         $(document).ready(function () {
             $("body").on("click", "#getLocationButton", fillLocation);
@@ -129,5 +217,6 @@
 
         }
     </script>
+    <!-- JS Plugins Init. -->
 </body>
 
