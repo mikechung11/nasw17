@@ -3328,6 +3328,7 @@
     <Content Include="assets\vendor\jquery.filer\bower.json" />
     <Content Include="assets\vendor\jquery.filer\LICENSE" />
     <Content Include="assets\vendor\jquery.filer\README.md" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\indexCtrl.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -3355,7 +3356,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Landing_Modal.cshtml" />
     <Content Include="Views\Home\SAResources.cshtml" />
     <Content Include="Views\Home\SuiResource.cshtml" />
     <Content Include="Views\Home\Report.cshtml" />
