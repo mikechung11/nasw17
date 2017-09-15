@@ -41,21 +41,21 @@
                 $cookies.put(value, 1, { 'expires': expireDate });
             }
             if (value == "suicide") {
-                if ($cookies.get(value) > 1) {
+                if ($cookies.get(value) > 4) {
                     $window.location.href = "/Home/SAPage";
                 } else {
                     $window.location.href = "/Home/SuiResource";
                 }
             }
             if (value == "sexual_assault") {
-                if ($cookies.get(value) > 1) {
+                if ($cookies.get(value) > 4) {
                     $window.location.href = "/Home/SAPage";
                 } else {
                     $window.location.href = "/Home/SAResources";
                 }
             }
             if (value == "domestic_violence") {
-                if ($cookies.get(value) > 1) {
+                if ($cookies.get(value) > 4) {
                     $window.location.href = "/Home/SAPage";
                 } else {
                     $window.location.href = "/Home/DVResource";

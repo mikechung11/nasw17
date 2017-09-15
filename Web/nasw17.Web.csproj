@@ -3132,6 +3132,16 @@
     <Content Include="images\logo-nasw-sm-.gif" />
     <Content Include="images\logo-nasw.gif" />
     <Content Include="images\map1.png" />
+    <Content Include="images\pexels-photo-255441.jpeg" />
+    <Content Include="images\pexels-photo-255527.jpeg" />
+    <Content Include="images\pexels-photo-302800.jpeg" />
+    <Content Include="images\pexels-photo-305821.jpeg" />
+    <Content Include="images\pexels-photo-316520.jpeg" />
+    <Content Include="images\pexels-photo-323391.jpeg" />
+    <Content Include="images\pexels-photo-326559.jpeg" />
+    <Content Include="images\pexels-photo-355887.jpeg" />
+    <Content Include="images\pexels-photo-414586.jpeg" />
+    <Content Include="images\pexels-photo-547114.jpeg" />
     <Content Include="images\trees.png" />
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular.js" />
@@ -3331,6 +3341,7 @@
     <Content Include="assets\vendor\jquery.filer\bower.json" />
     <Content Include="assets\vendor\jquery.filer\LICENSE" />
     <Content Include="assets\vendor\jquery.filer\README.md" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\indexCtrl.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -3358,14 +3369,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Landing_Modal.cshtml" />
-    <Content Include="Views\Home\SuiResource.cshtml" />
     <Content Include="Views\Home\Report.cshtml" />
     <Content Include="Views\Home\DVResource.cshtml" />
     <Content Include="Views\Home\SAPage.cshtml" />
     <Content Include="Views\Home\Completion.cshtml" />
     <Content Include="Views\Home\Complete.cshtml" />
     <Content Include="Views\Home\SAResources.cshtml" />
+    <Content Include="Views\Home\SuiResource.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
