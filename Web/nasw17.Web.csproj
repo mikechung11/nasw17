@@ -3360,7 +3360,7 @@
     <Content Include="Views\Home\SuiResource.cshtml" />
     <Content Include="Views\Home\Report.cshtml" />
     <Content Include="Views\Home\DVResource.cshtml" />
-    <Content Include="Views\Home\MyReport.cshtml" />
+    <Content Include="Views\Home\SAPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
