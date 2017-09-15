@@ -34,11 +34,15 @@ namespace nasw17.Web.Controllers
             return View();
         }
 
-
-
         public ActionResult SuiResource()
         {
             ViewBag.Message = "Suicide Prevention Resources.";
+
+            return View();
+        }
+        public ActionResult Report()
+        {
+            ViewBag.Message = "Report";
 
             return View();
         }

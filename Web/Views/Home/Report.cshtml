@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewBag.Title = "Report";
+}
+<!DOCTYPE html>
+<html lang="en" class="font-primary">
+<head>
+    <!-- Title -->
+    <title>Report Page</title>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin" rel="stylesheet" type="text/css">
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/bootstrap.min.css">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../../assets/vendor/animate.css">
+    <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../../assets/vendor/hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/jquery.filer/css/jquery.filer.css">
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="../../assets/css/unify.css">
+    <style>
+        .goToHome {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+            cursor: pointer;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a class="goToHome" href="/Home/Index">
+            <i class="fa fa-home fa-3x g-color-primary"></i>
+        </a>
+    </div>
+    <main>
+        <!-- Signup -->
+        <section class="g-bg-gray-light-v5">
+            <div class="container g-py-20">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-10">
+                        <div class="u-shadow-v21 g-bg-white rounded g-py-30 g-px-30">
+                            <header class="text-center mb-4">
+                                <h2 class="h2 g-color-primary g-font-weight-600">Report</h2>
+                            </header>
+                            <!-- Form -->
+                            <form class="g-py-10">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 mb-4">
+                                        <label class="g-color-gray-dark-v2 g-font-weight-600 g-font-size-13">First name:</label>
+                                        <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" placeholder="John">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 mb-4">
+                                        <label class="g-color-gray-dark-v2 g-font-weight-600 g-font-size-13">Last name:</label>
+                                        <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" placeholder="Doe">
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="g-color-gray-dark-v2 g-font-weight-600 g-font-size-13">Email:</label>
+                                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="email" placeholder="johndoe@gmail.com">
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 mb-4">
+                                        <label class="g-color-gray-dark-v2 g-font-weight-600 g-font-size-13">Address</label>
+                                        <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" placeholder="Street Address">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 mb-4">
+                                        <label class="g-color-gray-dark-v2 g-font-weight-600 g-font-size-13">City and State</label>
+                                        <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" placeholder="City, State">
+                                    </div>
+                                </div>
+                                <!-- Checkboxes Group -->
+                                <h4 class="g-color-gray-dark-v2 g-font-weight-600 g-font-size-13 mb-4">Category (Mark All That Apply)</h4>
+                                <div class="btn-group justified-content">
+                                    <label class="u-check g-pl-0">
+                                        <input class="hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                                        <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked rounded-0">Suicide</span>
+                                    </label>
+                                    <label class="u-check g-pl-0">
+                                        <input class="hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                                        <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Domestic Violence</span>
+                                    </label>
+                                    <label class="u-check g-pl-0">
+                                        <input class="hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                                        <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Sexual Assault</span>
+                                    </label>
+                                    <label class="u-check g-pl-0">
+                                        <input class="hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                                        <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Other</span>
+                                    </label>
+                                </div>
+                                <!-- End Checkboxes Group -->
+                                <div class="form-group">
+                                    <div class="input-group g-brd-primary--focus">
+                                        <textarea class="form-control form-control-md g-resize-none border-left-0 border-right-0 rounded-0 px-0" rows="4" placeholder="Additional Information"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-0 g-py-20">
+                                    <label class="g-color-gray-dark-v2 g-font-weight-600 g-font-size-13">Attachments:</label>
+                                    <input class="js-file-attachment" type="file" name="fileAttachment2[]">
+                                @*<div class="jFiler jFiler-theme-default">
+                                    <input class="js-file-attachment" type="file" name="fileAttachment2[]" multiple="multiple" style="position: absolute; left: -9999px; top: -9999px; z-index: -9999;"><div class="u-file-attach-v3 g-mb-15">
+                                        <h3 class="g-font-size-16 g-color-gray-dark-v2 mb-0">Drop files here or <span class="g-color-primary">Browse your device</span></h3>
+                                        <p class="g-font-size-14 g-color-gray-light-v2 mb-0">Maximum file size 10mb</p>
+                                    </div>
+                                </div>*@
+                                </div>
+                                <div class="row">
+                                    <button class="btn btn-md btn-block u-btn-primary rounded-0 g-py-15" type="button">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Signup -->
+    </main>
+    <!-- JS Global Compulsory -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../../assets/vendor/tether.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <!-- JS Unify -->
+    <script src="../../assets/vendor/jquery.filer/js/jquery.filer.min.js"></script>
+    <script src="../../assets/js/hs.core.js"></script>
+    <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="../../assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="../../assets/js/helpers/hs.file-attachments.js"></script>
+    <script>
+        $(document).on('ready', function () {
+            $.HSCore.helpers.HSFileAttachments.init();
+            $.HSCore.components.HSFileAttachment.init('.js-file-attachment');
+        });
+    </script>
+
+</body>
+</html>

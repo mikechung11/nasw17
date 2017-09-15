@@ -26,7 +26,7 @@
             if (type == 'me') {
                vm.showBtn = true;
             } else {
-               $window.location.href = "/Home/";
+               $window.location.href = "/Home/Report";
             }
         }
         function _categBtn(value) {
@@ -39,7 +39,9 @@
             } else {
                 $cookies.put(value, 1, { 'expires': expireDate });
             }
-            return $window.location.href = "/Home/";
+            if (value == "suicide") $window.location.href = "/Home/SuiResource";
+            if (value == "sexual_assault") $window.location.href = "/Home/SAResources";
+            if (value == "domestic_violence") $window.location.href = "/Home/";
         }
     }
 })();
