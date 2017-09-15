@@ -33,13 +33,18 @@
 
         .help_btn {
             height: 50px;
-            width: 320px;
+            width: 300px;
         }
 
         .help_btn2 {
             height: 50px;
             width: 200px;
         }
+
+        /*.escape_btn{
+            height: 70px;
+            width: 200px;
+        }*/
     </style>
 </head>
 <body ng-controller="IndexController as IxCtrl">
@@ -47,16 +52,19 @@
         <!-- Promo Block -->
         <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-min-height-100vh g-flex-middle g-bg-cover g-bg-pos-center g-bg-img-hero g-bg-black-opacity-0_6--after " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
             <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url(../../images/trees.png);"></div>
-            <div class="container text-center g-bg-transparent g-z-index-1 g-py-150" ng-cloak>
-                @*<div class="row">
-                        <a href="tel:+411">
-                            <input type="image" src="~/images/911.png" />
-                        </a>
-                    </div>*@
+            <div class="container text-center g-bg-transparent g-z-index-1 g-py-30" ng-cloak>
+                <div class="col-sm-12 g-py-30">
+                    <a href="https://www.google.com/" class="btn btn-md u-btn-white g-color-white g-bg-darkred g-brd-white--hover g-color-darkred--hover g-bg-white--hover g-rounded-25 escape_btn">
+                        <span class="pull-left text-left" style="padding-top:10px">
+                            <strong>ESCAPE</strong>
+                        </span>
+                        <i class="fa fa-ban float-right g-font-size-42 g-ml-15"></i>
+                    </a>
+                </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-12 g-py-20">
+                    <div class="col-lg-12">
                         <div class="mb-5" ng-hide="IxCtrl.showBtn">
-                            <h1 class="g-color-white g-font-size-60 mb-4 g-py-30">Need Help?</h1>
+                            <h1 class="g-color-white g-font-size-60 mb-4 g-py-10">Need Help?</h1>
                         </div>
                         <div class="mb-5" ng-show="IxCtrl.showBtn" ng-cloak>
                             <h1 class="g-color-white g-font-size-60 mb-4 g-py-10">Concerning?</h1>
@@ -68,6 +76,15 @@
                             </div>
                             <div class="col-sm-12 g-py-10">
                                 <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-primary--hover g-bg-white--hover g-rounded-25 help_btn" ng-click="IxCtrl.helpBtn()">Someone I Know Needs Help</button>
+                            </div>
+                            <div class="col-sm-12 g-py-50">
+                                <a href="tel:+211" class="btn btn-md u-btn-white g-color-white g-bg-darkred g-brd-white--hover g-color-darkred--hover g-bg-white--hover g-rounded-25 emergency_btn">
+                                    <span class="pull-left text-left">
+                                        <strong>Emergency</strong>
+                                        <span class="d-block text-center"><strong>Call 911</strong></span>
+                                    </span>
+                                    <i class="fa fa-phone float-right g-font-size-42 g-ml-15"></i>
+                                </a>
                             </div>
                         </div>
                         <!-- End First Buttons - Input -->
