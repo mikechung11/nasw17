@@ -26,9 +26,10 @@ namespace nasw17.Web.Controllers
 
             return View();
         }
-        public ActionResult Landing_Modal()
+
+        public ActionResult SAResources()
         {
-            ViewBag.Message = "Modal page";
+            ViewBag.Message = "Sexual Assault Resources.";
 
             return View();
         }
@@ -36,6 +37,26 @@ namespace nasw17.Web.Controllers
         public ActionResult SuiResource()
         {
             ViewBag.Message = "Suicide Prevention Resources.";
+
+            return View();
+        }
+
+        public ActionResult DVResource()
+        {
+            ViewBag.Message = "Domestic Violence Resources.";
+
+            return View();
+        }
+
+        public ActionResult SAPage()
+        {
+            ViewBag.Message = "Sexual Assault Page";
+
+            return View();
+        }
+        public ActionResult Report()
+        {
+            ViewBag.Message = "Report";
 
             return View();
         }

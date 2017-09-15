@@ -1,0 +1,89 @@
+﻿@{
+    Layout = "";
+}
+<head>
+
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/unify.css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+    <section class="g-bg-gray-gradient-opacity-v1">
+        <div class="container g-py-100">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Heading -->
+                    <div class="text-center g-mb-30">
+                        <div class="d-inline-block g-width-35 g-height-1 g-bg-primary mb-2"></div>
+                        <h2 class="g-color-black g-font-weight-600 mb-2">Please Tell Us A Little More</h2>
+                        <p class="lead g-width-60x--md mx-auto">Remember that all of the fields are optional and you are free to add whatever you are comfortable with.</p>
+                    </div>
+                    <form class="form-horizontal" style="margin-left:200px;">
+                        <fieldset>
+                            <!-- Text input-->
+                            <div class="form-group" style="margin-bottom:20px;">
+                                <label class="col-md-4 control-label" for=""><strong>First Name</strong></label>
+                                <div class="col-md-8">
+                                    <input id="" name="" type="text" placeholder="First Name" class="form-control input-md">
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group" style="margin-bottom:20px;">
+                                <label class="col-md-4 control-label" for=""><strong>Last Name</strong></label>
+                                <div class="col-md-8">
+                                    <input id="" name="" type="text" placeholder="Last Name" class="form-control input-md">
+
+                                </div>
+                            </div>
+
+                            <!-- Prepended text-->
+                            <div class="form-group" style="margin-bottom:20px;">
+                                <label class="col-md-4 control-label" for=""><strong>My Location</strong></label>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                    <span class="input-group-addon" id="getLocationButton">Go</span>
+                                        <input id="locationInput" name="" class="form-control" placeholder="Location" type="text">
+                                    </div>
+                                    <p class="help-block"><span style="display:inline-block; width: 45px;"></span>Get my current location</p>
+                                </div>
+                            </div>
+
+                            <!-- Textarea -->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for=""><strong>Tell Us More About Your Situation</strong></label>
+                                <div class="col-md-8">
+                                    <textarea rows="5" placeholder="Description" class="form-control" id="" name=""></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div>
+                        <button class="btn btn-primary" style="margin-left:600px">Send</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("body").on("click", "#getLocationButton", fillLocation);
+
+        });
+
+        fillLocation = function () {
+            console.log('hi');
+            $("#locationInput").val("Los Angeles, CA 90015");
+            
+        }
+    </script>
+</body>
