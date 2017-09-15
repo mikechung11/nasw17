@@ -1,33 +1,123 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html lang="en" class="font-primary" ng-app="mainApp">
+<head>
+    <!-- Title -->
+    <title>Need Help?</title>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico">
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin" rel="stylesheet" type="text/css">
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/bootstrap.min.css">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../../assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../../assets/vendor/animate.css">
+    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../../assets/vendor/hamburgers/hamburgers.min.css">
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="../../assets/css/unify.css">
+    <style>
+        .help_btn {
+            height: 50px;
+            width: 320px;
+        }
+    </style>
+</head>
+<body ng-controller="IndexController as IxCtrl">
+    <main>
+        <!-- Promo Block -->
+        <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-min-height-100vh g-flex-middle g-bg-cover g-bg-pos-center g-bg-img-hero g-bg-black-opacity-0_5--after " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+            <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url(../../images/trees.png);"></div>
+            <div class="container text-center g-bg-transparent g-z-index-1 g-py-25" ng-cloak>
+                    <div class="row">
+                        <a href="tel:+411">
+                            <input type="image" src="~/images/911.png" />
+                        </a>
+                    </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 g-py-20">
+                        <div class="mb-5">
+                            <h1 class="g-color-white g-font-size-60 mb-4 g-py-30">Need Help?</h1>
+                        </div>
+                        <!-- First Buttons - Input -->
+                        <div class="form-group mb-0">
+                            <div class="input-group justify-content-center">
+                                <div class="col-sm-4">
+                                    <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25 help_btn" ng-click="IxCtrl.helpBtn('me')">I Need Help</button>
+                                </div>
+                                <div class="col-sm-2">
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-md u-btn-white g-color-white g-bg-green g-brd-white--hover g-color-purple--hover g-bg-white--hover g-rounded-25 help_btn" ng-click="IxCtrl.helpBtn()">Someone I Know Needs Help</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End First Buttons - Input -->
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <h1><a href="https://www.rainn.org/articles/sexual-assault-men-and-boys">Some Link Text</a></h1>
+                    </div>
+                    <div class="col-sm-12 g-py-30" text-align="center">
+                        <img style="border-radius: 8px; height: 80%" src="~/images/logo-nasw(sm).gif" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    <!-- JS Global Compulsory -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="../../assets/vendor/tether.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="../../assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+    @*<script src="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>*@
+    <script src="../../assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+    <!-- JS Unify -->
+    <script src="../../assets/js/hs.core.js"></script>
+    <script src="../../assets/js/components/hs.header.js"></script>
+    <script src="../../assets/js/helpers/hs.hamburgers.js"></script>
+    <!-- JS Plugins Init. -->
+    <script>
+        // Header
+        $(document).on('ready', function () {
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // Initialization of HSMegaMenu plugin
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+        });
+    </script>
+    <script>
+        // Toolttips
+        $(document).on('ready', function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        ; (function ($) {
+            'use strict';
+            $(document).ready(function () {
+            });
+        })(jQuery);
+    </script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-cookies.js"></script>
+    <script src="~/Scripts/mainApp.js"></script>
+    <script src="~/Scripts/indexCtrl.js"></script>
+</body>
+</html>
