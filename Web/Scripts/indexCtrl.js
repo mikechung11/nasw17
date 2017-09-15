@@ -16,16 +16,30 @@
         vm.$cookies = $cookies;
         vm.helpBtn = _helpBtn;
         vm.showBtn = false;
+        vm.categBtn = _categBtn;
 
         function _init() {
-            //var socialURLval = $cookies.get('socialURL');
+            
+           
         }
         function _helpBtn(type) {
             if (type == 'me') {
-
+               vm.showBtn = true;
             } else {
-
+               $window.location.href = "/Home/";
             }
+        }
+        function _categBtn(value) {
+            var expireDate = new Date();
+            expireDate.setDate(expireDate.getDate() + 90);
+            if ($cookies.get(value) != null) {
+                var num = $cookies.get(value);
+                num++;
+                $cookies.put(value, num, { 'expires': expireDate });
+            } else {
+                $cookies.put(value, 1, { 'expires': expireDate });
+            }
+            return $window.location.href = "/Home/";
         }
     }
 })();
