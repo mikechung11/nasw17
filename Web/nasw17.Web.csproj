@@ -3356,7 +3356,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Landing_Modal.cshtml" />
-    <Content Include="Views\Home\SAResource.cshtml" />
+    <Content Include="Views\Home\SAResources.cshtml" />
     <Content Include="Views\Home\SuiResource.cshtml" />
     <Content Include="Views\Home\Report.cshtml" />
     <Content Include="Views\Home\DVResource.cshtml" />
