@@ -1,14 +1,21 @@
 ﻿
 @{
-    ViewBag.Title = "SAResources";
     Layout = "";
 }
-
 <!DOCTYPE html>
-<html>
+<html lang="en" class="font-primary">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <!-- Title -->
+    <title>FAQ Page 1 | Unify - Responsive Website Template</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico">
+
     <!-- Google Fonts -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin" rel="stylesheet" type="text/css">
 
@@ -16,7 +23,9 @@
     <link rel="stylesheet" href="../../assets/vendor/bootstrap/bootstrap.min.css">
 
     <!-- CSS Implementing Plugins -->
-  
+    <link rel="stylesheet" href="../../assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../../assets/vendor/icon-hs/style.css">
     <link rel="stylesheet" href="../../assets/vendor/animate.css">
     <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsparallaxer.css">
     <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
@@ -27,134 +36,214 @@
     <!-- CSS Unify -->
     <link rel="stylesheet" href="../../assets/css/unify.css">
 
-    <!-- Weren't Included-->
-    <link rel="stylesheet" href="../../assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="../../assets/vendor/icon-hs/style.css">
+
 </head>
+
 <body>
-    <div>
-    <h1>Get Help Now</h1>
+    <main>
 
-    <h3>Phone numbers you can call</h3>
-        <p> <a href="https://www.rainn.org/about-national-sexual-assault-telephone-hotline">
-            National Sexual Assault Telephone Hotline
-             </a></p>
 
-    <h3>Send Messages</h3>
-    <h3>Readable Resources</h3>
-        <p><a href="https://www.rainn.org/articles/sexual-assault-men-and-boys">For men</a></p>
-        </div>
-  
-    
-    <!-- Accordion -->
-    <section class="g-bg-gray-gradient-opacity-v1">
-        <div class="container g-py-100">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <!-- Heading -->
-                    <div class="text-center g-mb-60">
-                        <div class="d-inline-block g-width-35 g-height-1 g-bg-primary mb-2"></div>
-                        <h2 class="g-color-black g-font-weight-600 mb-2">Frequently Asked Questions</h2>
-                        <p class="lead g-width-60x--md mx-auto">We aim high at being focused on building relationships with our clients and community.</p>
-                    </div>
-                    <!-- End Heading -->
-                    <div id="accordion" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
-                        <!-- Card -->
-                        <div class="card g-brd-none rounded g-mb-20">
-                            <div id="accordion-heading-01" class="g-pa-0" role="tab">
-                                <h5 class="mb-0">
-                                    <a class="collapsed d-flex justify-content-between u-shadow-v19 g-color-main g-text-underline--none--hover rounded g-px-30 g-py-20" href="#accordion-body-01" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-01">
-                                        Guarantee?
-                                        <span class="u-accordion__control-icon g-color-primary">
-                                            <i class="fa fa-angle-down"></i>
-                                            <i class="fa fa-angle-up"></i>
-                                        </span>
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="accordion-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-01">
-                                <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <!-- Accordion -->
+        <section class="g-bg-gray-gradient-opacity-v1">
+            <div class="container g-py-100">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Heading -->
+                        <div class="text-center g-mb-30">
+                            <div class="d-inline-block g-width-35 g-height-1 g-bg-primary mb-2"></div>
+                            <h2 class="g-color-black g-font-weight-600 mb-2">Need Immediate Assistance?</h2>
+                            <p class="lead g-width-60x--md mx-auto">These resources will help you out!</p>
+                        </div>
+                        <!-- End Heading -->
+
+                        <div id="accordion" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded g-mb-20">
+                                <div id="accordion-heading-01" class="g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between u-shadow-v19 g-color-main g-text-underline--none--hover rounded g-px-30 g-py-20" href="#accordion-body-01" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-01">
+                                            Phone Numbers You Can Call
+                                            <span class="u-accordion__control-icon g-color-primary">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+
+                                </div>
+                                <div id="accordion-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-01">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        <p>
+                                            <a href="tel:+1-123-123-1233"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                                                National Sexual Assault Hotline
+                                            </a>
+                                            <br/>
+                                            The National Sexual Assault Hotline is a safe, confidential service that gives you gives you access to a range of free services. 
+                                            Sexual assault service providers are organizations or agencies dedicated to supporting survivors of sexual assault. The providers who answer calls placed to the hotline are known as RAINN affiliates. 
+                                        </p>
+                                        <p>
+                                            <a href="tel:+1-123-123-1233"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                                                Help for Crime Victims
+                                            </a>
+                                            <br/>
+                                            The National Center's Connect Directory provides a fast and easy way for victims to locate service providers specializing in specific areas of victimization in a wide variety of jurisdictions throughout the country. 
+                                            Users enter information into a simple form which is used to pull up contact information for service providers nearby who can help.
+                                        </p>
+                                        <p>
+                                            <a href="tel:+1-123-123-1233"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                                                Pandora's Project
+                                            </a>
+                                            <br/>
+                                            Pandora's Project offers peer support to anyone who has been a victim of rape, sexual assault, or sexual abuse through our online support group, Pandora's Aquarium. 
+                                            We believe that connecting with other rape and sexual abuse survivors is an important part of healing.
+                                        </p>
+                                        <p>
+                                            <a href="tel:+1-123-123-1233"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                                                State Hotlines
+                                            </a>
+                                            <br/>
+                                            These groups and agencies deal with sexual harassment on the job or in school settings. Click on the letter that corresponds to the first letter of your state
+                                        </p>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card g-brd-none rounded g-mb-20">
-                            <div id="accordion-heading-02" class="g-pa-0" role="tab">
-                                <h5 class="mb-0">
-                                    <a class="collapsed d-flex justify-content-between u-shadow-v19 g-color-main g-text-underline--none--hover rounded g-px-30 g-py-20" href="#accordion-body-02" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-02">
-                                        Do you have any built-in caching?
-                                        <span class="u-accordion__control-icon g-color-primary">
-                                            <i class="fa fa-angle-down"></i>
-                                            <i class="fa fa-angle-up"></i>
-                                        </span>
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="accordion-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-02">
-                                <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            <!-- End Card -->
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded g-mb-20">
+                                <div id="accordion-heading-02" class="g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between u-shadow-v19 g-color-main g-text-underline--none--hover rounded g-px-30 g-py-20" href="#accordion-body-02" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-02">
+                                            People You Can Chat With
+                                            <span class="u-accordion__control-icon g-color-primary">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="accordion-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-02">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        <p>
+                                            <a href="http://www.pandys.org/whobelongs.html"><i class="fa fa-weixin" aria-hidden="true"></i>
+                                                Message Board For Assault Survivors
+                                            </a>
+                                            <br/>
+                                        </p>
+                                        Pandora's Project offers peer support to anyone who has been a victim of rape, sexual assault, or sexual abuse through our online support group, Pandora's Aquarium. We believe that connecting with other rape and sexual abuse survivors is an important part of healing. Our online support group includes a message board, chat room, and blogs. It is free to join and is safely moderated by a diverse group of survivors.
+                                        <p>
+                                            <a href="http://www.aftersilence.org/"><i class="fa fa-weixin" aria-hidden="true"></i>
+                                                After Silence Message Board
+                                            </a>
+                                            <br/>
+                                            After Silence is designed to help victims become survivors, and communicate in the recovery of sexual violence. Our mission is to support, empower, validate, and educate survivors, as well as their families and supporters. The core of our organization is a support group, message board, and chat room where victims and survivors come together online in a mutually supportive and safe environment.
+                                        </p>
+                                        <p>
+                                            <a href="https://www.safehelpline.org/about-rainn"><i class="fa fa-weixin" aria-hidden="true"></i>
+                                                Safe HelpLine
+                                            </a>
+                                            <br/>
+                                            What to do if you or someone you know has been sexually assaulted. If you believe you have experienced or witnessed retaliation following a report of sexual assault, please let the DoD Sexual Assault Prevention & Response Office know.
+                                        </p>
+                                        <p>
+                                            <a href="https://www.rainn.org/about-national-sexual-assault-telephone-hotline"><i class="fa fa-weixin" aria-hidden="true"></i>
+                                                National Sexual Assault Hotline
+                                            </a>
+                                            <br/>
+                                            Your privacy and safety are crucial. Please make sure you are in a safe place and that you are using a secure device and Internet connection. Please note that while we have taken numerous measures to keep your communications safe while using our site, no Internet transmission is 100%  secure.
+
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card g-brd-none rounded g-mb-20">
-                            <div id="accordion-heading-03" class="g-pa-0" role="tab">
-                                <h5 class="mb-0">
-                                    <a class="collapsed d-flex justify-content-between u-shadow-v19 g-color-main g-text-underline--none--hover rounded g-px-30 g-py-20" href="#accordion-body-03" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-03">
-                                        Can I add/upgrade my plan at any time?
-                                        <span class="u-accordion__control-icon g-color-primary">
-                                            <i class="fa fa-angle-down"></i>
-                                            <i class="fa fa-angle-up"></i>
-                                        </span>
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="accordion-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-03">
-                                <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            <!-- End Card -->
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded g-mb-20">
+                                <div id="accordion-heading-03" class="g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between u-shadow-v19 g-color-main g-text-underline--none--hover rounded g-px-30 g-py-20" href="#accordion-body-03" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-03">
+                                            Heres Some Informational Resources
+                                            <span class="u-accordion__control-icon g-color-primary">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="accordion-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-03">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        <p>
+                                            <a href="https://www.safehorizon.org/get-help/rape-and-sexual-assault/#overview/">
+                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                Safe Horizon - Signs of Abuse
+                                            </a>
+                                            <br/>
+                                            Safe Horizon envisions a society free of family and community violence. We will lead the way by empowering victims of domestic violence, child abuse, sexual assault and human trafficking to move from crisis to confidence.
+                                        </p>
+                                        <p>
+                                            <a href="http://kernalliance.org/">
+                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                Alliance Against Family Abuse
+                                            </a>
+                                            <br />
+                                            The mission of the Alliance Against Family Violence & Sexual Assault is to stop domestic violence and sexual assault in Kern County and assist survivors in reclaiming their lives
+                                        </p>
+                                        <p>
+                                            <a href="https://www.rainn.org/articles/sexual-assault-men-and-boys">
+                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                Sexual Assault of Men and Boys
+                                            </a>
+                                            <br />
+                                            Sexual assault can happen to anyone, no matter your age, your sexual orientation, or your gender identity. Men and boys who have been sexually assaulted or abused may have many of the same feelings and reactions as other survivors of sexual assault, but they may also face some additional challenges because of social attitudes and stereotypes about men and masculinity.
+                                        </p>
+                                        <p>
+                                            <a href="https://www.rainn.org/about-national-sexual-assault-telephone-hotline"><i class="fa fa-file" aria-hidden="true"></i>
+                                                National Sexual Assault Hotline
+                                            </a>
+                                            <br/>
+                                            The National Sexual Assault Hotline was the nation’s first decentralized hotline, connecting those in need with help in their local communities. It’s made up of a network of independent sexual assault service providers, vetted by RAINN, who answer calls to a single, nationwide hotline number.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- End Card -->
                         </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card g-brd-none rounded g-mb-20">
-                            <div id="accordion-heading-04" class="g-pa-0" role="tab">
-                                <h5 class="mb-0">
-                                    <a class="collapsed d-flex justify-content-between u-shadow-v19 g-color-main g-text-underline--none--hover rounded g-px-30 g-py-20" href="#accordion-body-04" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-04">
-                                        What access comes with my hosting plan?
-                                        <span class="u-accordion__control-icon g-color-primary">
-                                            <i class="fa fa-angle-down"></i>
-                                            <i class="fa fa-angle-up"></i>
-                                        </span>
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="accordion-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-04">
-                                <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Card -->
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Accordion -->
-    <script src="~/assets/jquery/jquery.min.js"></script>
-    <script src="~/assets/js/hs.core.js"></script>
-    <script src="~/assets/js/components/hs.header.js"></script>
-    <script src="~/assets/vendor/tether.min.js"></script>
-    
-    <script src="~/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-    <script src="~/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+        </section>
+        <!-- End Accordion -->
 
-    <script src="~/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+    </main>
+
+    <!-- JS Global Compulsory -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../../assets/vendor/tether.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="../../assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+    <script src="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+    <script src="../../assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+
+    <!-- JS Unify -->
+    <script src="../../assets/js/hs.core.js"></script>
+    <script src="../../assets/js/components/hs.header.js"></script>
+    <script src="../../assets/js/helpers/hs.hamburgers.js"></script>
+
+
+
+    <!-- JS Plugins Init. -->
+    <script>
+        // Header
+        $(document).on('ready', function () {
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        });
+    </script>
+
+
 </body>
 </html>
-
