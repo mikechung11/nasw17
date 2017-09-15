@@ -41,17 +41,68 @@
     </style>
 </head>
 <body>
+    <!-- Header -->
+    <header id="js-header" class="u-header u-header--static--lg u-header--show-hide--lg u-header--change-appearance--lg"
+            data-header-fix-moment="500"
+            data-header-fix-effect="slide">
+        <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10"
+             data-header-fix-moment-exclude="g-bg-white g-py-10"
+             data-header-fix-moment-classes="g-bg-white-opacity-0_7 u-shadow-v18 g-py-0">
+            <nav class="js-mega-menu navbar navbar-toggleable-md">
+                <div class="container">
+                    <!-- Responsive Toggle Button -->
+                    <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-right-0" type="button"
+                            aria-label="Toggle navigation"
+                            aria-expanded="false"
+                            aria-controls="navBar"
+                            data-toggle="collapse"
+                            data-target="#navBar">
+                        <span class="hamburger hamburger--slider">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <!-- End Responsive Toggle Button -->
+                    <!-- Logo -->
+                    <a href="/Home/Index" class="navbar-brand">
+                        <img src="~/images/logo-nasw-sm-.gif" alt="nasw logo">
+                    </a>
+                    <!-- End Logo -->
+                    <!-- Navigation -->
+                    <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+                        <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
+                            <li class="nav-item g-mx-20--lg ">
+                                <a href="/Home/Index" class="nav-link g-px-0 g-color-primary--hover"><i class="fa fa-home g-color-primary"></i>Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/SAPage" class="nav-link g-px-0 g-color-primary--hover">Self-Report</a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/SuiResource" class="nav-link g-px-0 g-color-primary--hover">Suicide Prevention</a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/SAResources" class="nav-link g-px-0 g-color-primary--hover">Sexual Abuse</a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/DVResource" class="nav-link g-px-0 g-color-primary--hover">Domestic Violence</a>
+                            </li>
+                            <li class="nav-item g-mx-20--lg">
+                                <a href="/Home/Report" class="nav-link g-px-0 g-color-primary--hover">Report for Another</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Navigation -->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+    <main>
     <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-min-height-100vh g-flex-middle g-bg-cover g-bg-pos-center g-bg-img-hero g-bg-black-opacity-0_6--after " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 
         <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url(../../images/trees.png);"></div>
         <div class="container g-bg-transparent g-z-index-1 g-py-30" ng-cloak>
-            <div>
-                <a class="goToHome" href="/Home/Index">
-                    <i class="fa fa-home fa-3x g-color-primary"></i>
-                </a>
-            </div>
-            <main>
-                @*comment*@
                 <!-- Accordion -->
                 <section class="g-bg-gray-gradient-opacity-v1">
                     <div class="container g-py-100">
@@ -176,23 +227,22 @@
                     </div>
                 </section>
                 <!-- End Accordion -->
-
+            </div>
+        </section>
             </main>
-        </div>
-    </section>
-    <!-- JS Global Compulsory -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../../assets/vendor/tether.min.js"></script>
-    <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
-    <!-- JS Implementing Plugins -->
-    <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-    <script src="../../assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-    <script src="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-    <script src="../../assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
-    <!-- JS Unify -->
-    <script src="../../assets/js/hs.core.js"></script>
-    <script src="../../assets/js/components/hs.header.js"></script>
-    <script src="../../assets/js/helpers/hs.hamburgers.js"></script>
+            <!-- JS Global Compulsory -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="../../assets/vendor/tether.min.js"></script>
+            <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+            <!-- JS Implementing Plugins -->
+            <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+            <script src="../../assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+            <script src="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+            <script src="../../assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+            <!-- JS Unify -->
+            <script src="../../assets/js/hs.core.js"></script>
+            <script src="../../assets/js/components/hs.header.js"></script>
+            <script src="../../assets/js/helpers/hs.hamburgers.js"></script>
 
     <!-- JS Plugins Init. -->
     <script>
