@@ -3127,6 +3127,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\change.jpg" />
     <Content Include="images\logo-nasw%28sm%29.gif" />
     <Content Include="images\logo-nasw-sm-.gif" />
     <Content Include="images\logo-nasw.gif" />
@@ -3364,6 +3365,7 @@
     <Content Include="Views\Home\DVResource.cshtml" />
     <Content Include="Views\Home\SAPage.cshtml" />
     <Content Include="Views\Home\Completion.cshtml" />
+    <Content Include="Views\Home\Complete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

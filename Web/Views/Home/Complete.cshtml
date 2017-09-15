@@ -1,14 +1,15 @@
-﻿@{
-    Layout = "";
-}
+﻿<!DOCTYPE html>
+<html lang="en" class="font-primary">
 <head>
     <!-- Title -->
-    <title>Self Report</title>
+    <title>Report Complete</title>
+    <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../favicon.ico">
+
     <!-- Google Fonts -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin" rel="stylesheet" type="text/css">
     <!-- CSS Global Compulsory -->
@@ -25,8 +26,27 @@
     <link rel="stylesheet" href="../../assets/vendor/hamburgers/hamburgers.min.css">
     <!-- CSS Unify -->
     <link rel="stylesheet" href="../../assets/css/unify.css">
-</head>
+    <style>
+        [ng\:cloak], [ng-cloak], .ng-cloak {
+            display: none !important;
+        }
 
+        .help_btn {
+            height: 50px;
+            width: 300px;
+        }
+
+        .help_btn2 {
+            height: 50px;
+            width: 200px;
+        }
+
+        /*.escape_btn{
+            height: 70px;
+            width: 200px;
+        }*/
+    </style>
+</head>
 <body>
     <!-- Header -->
     <header id="js-header" class="u-header u-header--static--lg u-header--show-hide--lg u-header--change-appearance--lg"
@@ -85,99 +105,55 @@
         </div>
     </header>
     <!-- End Header -->
-    <section class="g-bg-gray-gradient-opacity-v1">
-        <div class="container g-py-100">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <!-- Heading -->
-                    <div class="text-center g-mb-30">
-                        <div class="d-inline-block g-width-35 g-height-1 g-bg-primary mb-2"></div>
-                        <h2 class="g-color-black g-font-weight-600 mb-2">Please Tell Us A Little More</h2>
-                        <p class="lead g-width-60x--md mx-auto">Remember that all of the fields are optional and you are free to add whatever you are comfortable with.</p>
-                    </div>
-                    <form class="form-horizontal" style="margin-left:200px;">
-                        <fieldset>
-                            <!-- Text input-->
-                            <div class="form-group" style="margin-bottom:20px;">
-                                <label class="col-md-4 control-label" for=""><strong>First Name</strong></label>
-                                <div class="col-md-8">
-                                    <input id="" name="" type="text" placeholder="First Name" class="form-control input-md">
-
-                                </div>
-                            </div>
-
-                            <!-- Text input-->
-                            <div class="form-group" style="margin-bottom:20px;">
-                                <label class="col-md-4 control-label" for=""><strong>Last Name</strong></label>
-                                <div class="col-md-8">
-                                    <input id="" name="" type="text" placeholder="Last Name" class="form-control input-md">
-
-                                </div>
-                            </div>
-
-                            <!-- Prepended text-->
-                            <div class="form-group" style="margin-bottom:20px;">
-                                <label class="col-md-4 control-label" for=""><strong>My Location</strong></label>
-                                <div class="col-md-8">
-                                    <div class="input-group">
-                                    <span class="input-group-addon" id="getLocationButton">Go</span>
-                                        <input id="locationInput" name="" class="form-control" placeholder="Location" type="text">
-                                    </div>
-                                    <p class="help-block"><span style="display:inline-block; width: 45px;"></span>Get my current location</p>
-                                </div>
-                            </div>
-
-                            <!-- Textarea -->
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for=""><strong>Tell Us More About Your Situation</strong></label>
-                                <div class="col-md-8">
-                                    <textarea rows="5" placeholder="Description" class="form-control" id="" name=""></textarea>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div>
-                        <a class="btn btn-primary" style="margin-left:600px" href="/Home/Complete">Submit</a>
-                    </div>
-
-
-                </div>
+    <section class="text-center g-py-50">
+        <div class="container">
+            <div class="u-heading-v2-5--bottom g-brd-primary g-mb-30">
+                <h2 class="u-heading-v2__title text-uppercase g-font-weight-300 mb-0">Great Job!</h2>
             </div>
+            <p class="lead g-px-60--md g-mb-40"> Someone will be in touch with you <span class="g-color-primary">shortly</span>. <br />Looking for help is just the <span class="g-color-primary">first step</span>. <br />Please refer to our resources for <span class="g-color-primary">additional information</span></p>
+            <img class="img-fluid" src="~/images/change.jpg" alt="change">
         </div>
     </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- JS Global Compulsory -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
     <script src="../../assets/vendor/tether.min.js"></script>
     <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
     <!-- JS Implementing Plugins -->
     <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
     <script src="../../assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-    <script src="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+    @*<script src="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>*@
     <script src="../../assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
     <!-- JS Unify -->
     <script src="../../assets/js/hs.core.js"></script>
     <script src="../../assets/js/components/hs.header.js"></script>
     <script src="../../assets/js/helpers/hs.hamburgers.js"></script>
-
+    <!-- JS Plugins Init. -->
     <script>
         // Header
         $(document).on('ready', function () {
             $.HSCore.components.HSHeader.init($('#js-header'));
             $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // Initialization of HSMegaMenu plugin
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
         });
     </script>
     <script>
-        $(document).ready(function () {
-            $("body").on("click", "#getLocationButton", fillLocation);
-
+        // Toolttips
+        $(document).on('ready', function () {
+            $('[data-toggle="tooltip"]').tooltip();
         });
 
-        fillLocation = function () {
-            console.log('hi');
-            $("#locationInput").val("Los Angeles, CA 90015");
-            
-        }
+        ; (function ($) {
+            'use strict';
+            $(document).ready(function () {
+            });
+        })(jQuery);
     </script>
-    <!-- JS Plugins Init. -->
 </body>
+</html>

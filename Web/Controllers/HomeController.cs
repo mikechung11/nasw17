@@ -66,5 +66,11 @@ namespace nasw17.Web.Controllers
 
             return View();
         }
+        public ActionResult Complete()
+        {
+            ViewBag.Message = "Complete";
+
+            return View();
+        }
     }
 }
