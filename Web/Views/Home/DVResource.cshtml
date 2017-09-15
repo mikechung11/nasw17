@@ -35,13 +35,30 @@
 
     <!-- CSS Unify -->
     <link rel="stylesheet" href="../../assets/css/unify.css">
-
-
+    <style>
+        .goToHome {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+            cursor: pointer;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+    </style>
 </head>
 
 <body>
-    <main>
+    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-min-height-100vh g-flex-middle g-bg-cover g-bg-pos-center g-bg-img-hero g-bg-black-opacity-0_6--after " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 
+        <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url(../../images/trees.png);"></div>
+        <div class="container g-bg-transparent g-z-index-1 g-py-30" ng-cloak>
+            <main>
+                <div>
+                    <a class="goToHome" href="/Home/Index">
+                        <i class="fa fa-home fa-3x g-color-primary"></i>
+                    </a>
+                </div>
 
         <!-- Accordion -->
         <section class="g-bg-gray-gradient-opacity-v1">
@@ -56,58 +73,58 @@
                         </div>
                         <!-- End Heading -->
 
-                        <div id="accordion" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
-                            <!-- Card -->
-                            <div class="card g-brd-none rounded g-mb-20">
-                                <div id="accordion-heading-01" class="g-pa-0" role="tab">
-                                    <h5 class="mb-0">
-                                        <a class="collapsed d-flex justify-content-between u-shadow-v19 g-color-main g-text-underline--none--hover rounded g-px-30 g-py-20" href="#accordion-body-01" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-01">
-                                            Phone Numbers You Can Call
-                                            <span class="u-accordion__control-icon g-color-primary">
-                                                <i class="fa fa-angle-down"></i>
-                                                <i class="fa fa-angle-up"></i>
-                                            </span>
-                                        </a>
-                                    </h5>
+                                <div id="accordion" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
+                                    <!-- Card -->
+                                    <div class="card g-brd-none rounded g-mb-20">
+                                        <div id="accordion-heading-01" class="g-pa-0" role="tab">
+                                            <h5 class="mb-0">
+                                                <a class="collapsed d-flex justify-content-between u-shadow-v19 g-color-main g-text-underline--none--hover rounded g-px-30 g-py-20" href="#accordion-body-01" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-01">
+                                                    Phone Numbers You Can Call
+                                                    <span class="u-accordion__control-icon g-color-primary">
+                                                        <i class="fa fa-angle-down"></i>
+                                                        <i class="fa fa-angle-up"></i>
+                                                    </span>
+                                                </a>
+                                            </h5>
 
-                                </div>
-                                <div id="accordion-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-01">
-                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
-                                        <p>
-                                            <a href="tel:+1-123-123-1233">
-                                                <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                                National Domestic Violence Hotline
-                                            </a>
-                                            <br />
-                                            National Domestic Violence Hotline is a safe, confidential service that gives you gives you access to a range of free services.
-                                            Sexual assault service providers are organizations or agencies dedicated to supporting survivors of sexual assault. The providers who answer calls placed to the hotline are known as RAINN affiliates.
-                                        </p>
-                                        <p>
-                                            <a href="tel:+1-123-123-1233">
-                                                <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                                Help for Crime Victims
-                                            </a>
-                                            <br />
-                                            The National Center's Connect Directory provides a fast and easy way for victims to locate service providers specializing in specific areas of victimization in a wide variety of jurisdictions throughout the country.
-                                            Users enter information into a simple form which is used to pull up contact information for service providers nearby who can help.
-                                        </p>
-                                        <p>
-                                            <a href="tel:+1-123-123-1233">
-                                                <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                                Pandora's Project
-                                            </a>
-                                            <br />
-                                            Pandora's Project offers peer support to anyone who has been a victim of abuse, domestic violence, or domestic abuse through our online support group, Pandora's Aquarium.
-                                            We believe that connecting with other rape and sexual abuse survivors is an important part of healing.
-                                        </p>
-                                        <p>
-                                            <a href="tel:+1-123-123-1233">
-                                                <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                                State Hotlines
-                                            </a>
-                                            <br />
-                                            These groups and agencies deal with domestic violence on the job or in school settings. Click on the letter that corresponds to the first letter of your state
-                                        </p>
+                                        </div>
+                                        <div id="accordion-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-01">
+                                            <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                                <p>
+                                                    <a href="tel:+1-123-123-1233">
+                                                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                                        National Domestic Violence Hotline
+                                                    </a>
+                                                    <br />
+                                                    National Domestic Violence Hotline is a safe, confidential service that gives you gives you access to a range of free services.
+                                                    Sexual assault service providers are organizations or agencies dedicated to supporting survivors of sexual assault. The providers who answer calls placed to the hotline are known as RAINN affiliates.
+                                                </p>
+                                                <p>
+                                                    <a href="tel:+1-123-123-1233">
+                                                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                                        Help for Crime Victims
+                                                    </a>
+                                                    <br />
+                                                    The National Center's Connect Directory provides a fast and easy way for victims to locate service providers specializing in specific areas of victimization in a wide variety of jurisdictions throughout the country.
+                                                    Users enter information into a simple form which is used to pull up contact information for service providers nearby who can help.
+                                                </p>
+                                                <p>
+                                                    <a href="tel:+1-123-123-1233">
+                                                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                                        Pandora's Project
+                                                    </a>
+                                                    <br />
+                                                    Pandora's Project offers peer support to anyone who has been a victim of abuse, domestic violence, or domestic abuse through our online support group, Pandora's Aquarium.
+                                                    We believe that connecting with other rape and sexual abuse survivors is an important part of healing.
+                                                </p>
+                                                <p>
+                                                    <a href="tel:+1-123-123-1233">
+                                                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                                        State Hotlines
+                                                    </a>
+                                                    <br />
+                                                    These groups and agencies deal with domestic violence on the job or in school settings. Click on the letter that corresponds to the first letter of your state
+                                                </p>
 
                                     </div>
                                 </div>
@@ -215,35 +232,37 @@
         </section>
         <!-- End Accordion -->
 
-    </main>
+            </main>
+            </div>
+        </section>
 
-    <!-- JS Global Compulsory -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../../assets/vendor/tether.min.js"></script>
-    <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+            <!-- JS Global Compulsory -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="../../assets/vendor/tether.min.js"></script>
+            <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
 
-    <!-- JS Implementing Plugins -->
-    <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-    <script src="../../assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-    <script src="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-    <script src="../../assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+            <!-- JS Implementing Plugins -->
+            <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+            <script src="../../assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+            <script src="../../assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+            <script src="../../assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
 
-    <!-- JS Unify -->
-    <script src="../../assets/js/hs.core.js"></script>
-    <script src="../../assets/js/components/hs.header.js"></script>
-    <script src="../../assets/js/helpers/hs.hamburgers.js"></script>
+            <!-- JS Unify -->
+            <script src="../../assets/js/hs.core.js"></script>
+            <script src="../../assets/js/components/hs.header.js"></script>
+            <script src="../../assets/js/helpers/hs.hamburgers.js"></script>
 
 
 
-    <!-- JS Plugins Init. -->
-    <script>
-        // Header
-        $(document).on('ready', function () {
-            $.HSCore.components.HSHeader.init($('#js-header'));
-            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+            <!-- JS Plugins Init. -->
+            <script>
+                // Header
+                $(document).on('ready', function () {
+                    $.HSCore.components.HSHeader.init($('#js-header'));
+                    $.HSCore.helpers.HSHamburgers.init('.hamburger');
 
-        });
-    </script>
+                });
+            </script>
 
 
 </body>
