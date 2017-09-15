@@ -106,17 +106,21 @@
         </div>
     </header>
     <!-- End Header -->
-
+    
     <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-min-height-100vh g-flex-middle g-bg-cover g-bg-pos-center g-bg-img-hero g-bg-black-opacity-0_6--after " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-
+        <!-- Escape Button -->
+        <div style=" position: fixed; right: 10px; top: 20%; z-index: 10">
+            <a href="https://www.google.com/" class="btn btn-md u-btn-white g-color-white g-bg-darkred g-brd-white--hover g-color-darkred--hover g-bg-white--hover g-rounded-25 escape_btn">
+                <span class="pull-left text-left" style="padding-top:10px">
+                    <strong>ESCAPE</strong>
+                </span>
+                <i class="fa fa-ban float-right g-font-size-42 g-ml-15"></i>
+            </a>
+        </div>
+        <!-- Escape Button End-->
         <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url(../../images/trees.png);"></div>
         <div class="container g-bg-transparent g-z-index-1 g-py-30" ng-cloak>
 
-            <div>
-                <a class="goToHome" href="/Home/Index">
-                    <i class="fa fa-home fa-3x g-color-primary"></i>
-                </a>
-            </div>
             <!-- Signup -->
             <section class="g-bg-gray-light-v5 g-bg-transparent ">
                 <div class="container g-bg-transparent g-py-20">
@@ -161,18 +165,19 @@
                                             </div>
                                         </div>
 
-                            <!-- Textarea -->
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for=""><strong>Tell Us More About Your Situation</strong></label>
-                                <div class="col-md-8">
-                                    <textarea rows="5" placeholder="Description" class="form-control" id="" name=""></textarea>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div>
-                        <a class="btn btn-primary" style="margin-left:600px" href="/Home/Complete">Submit</a>
-                    </div>
+                                        <!-- Textarea -->
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for=""><strong>Tell Us More About Your Situation</strong></label>
+                                            <div class="col-md-8">
+                                                <textarea rows="5" style="width:115%;" placeholder="Description" class="form-control" id="" name=""></textarea>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <div class="row">
+                                        <a class="btn btn-md btn-block u-btn-primary rounded-0 g-py-15" href="/home/complete" style="width:76%;">Submit</a>
+                                    </div>
+                                </form>
+                               
 
 
                             </div>
