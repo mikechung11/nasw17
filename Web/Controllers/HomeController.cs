@@ -54,5 +54,11 @@ namespace nasw17.Web.Controllers
 
             return View();
         }
+        public ActionResult Report()
+        {
+            ViewBag.Message = "Report";
+
+            return View();
+        }
     }
 }
