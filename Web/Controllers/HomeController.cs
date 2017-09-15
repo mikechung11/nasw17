@@ -26,12 +26,6 @@ namespace nasw17.Web.Controllers
 
             return View();
         }
-        public ActionResult Landing_Modal()
-        {
-            ViewBag.Message = "Modal page";
-
-            return View();
-        }
 
         public ActionResult SAResources()
         {
